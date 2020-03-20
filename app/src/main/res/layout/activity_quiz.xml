@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical" >
+
+        <!-- Question 1 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="1. Which multimedia messaging app created by Evan Spiegel, Bobby Murphy, and Reggie Brown, has pictures and messages which are only available for a short time before they become inaccessible?"/>
+
+        <RadioGroup
+            android:id="@+id/num_one_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/a_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Snapchat" />
+
+            <RadioButton
+                android:id="@+id/b_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Messenger" />
+
+            <RadioButton
+                android:id="@+id/c_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Viber" />
+
+            <RadioButton
+                android:id="@+id/d_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="WeChat" />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="2. Which technology was named after the nickname of Denmak and Norway's 10th century king, Harald Gormsson?"
+            />
+
+        <RadioGroup
+            android:id="@+id/num_two_radio_group"
+            style="@style/questionStyle">
+            />
+
+            <RadioButton
+                android:id="@+id/one_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Wireless" />
+
+            <RadioButton
+                android:id="@+id/two_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Wifi" />
+
+            <RadioButton
+                android:id="@+id/three_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Bluetooth" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="AI(Artificial intelligence)" />
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="3. Tux the penguin is the mascot of which computer operating system?"
+            />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="name the correct operiting system"
+            android:inputType="text"/>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Which Microsoft product replaced Lotus 1-2-3 as the industry standard for spreadsheets?"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <CheckBox
+            android:id="@+id/excel_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excel"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/d_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MS-Word"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/p_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powerpoint"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/f_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MS_Project"
+            android:textSize="16sp"
+            android:layout_marginBottom="16sp"/>
+
+
+
+
+
+        <!-- Question 5 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="5. I take what you receive and surrender it all by waving my flag. What am I?"
+            />
+        <RadioGroup
+            android:id="@+id/num_five_radio_group"
+            style="@style/questionStyle">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="A letter" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="An email" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="An enveloppe" />
+
+            <RadioButton
+                android:id="@+id/mail_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="A mailbox" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>
+
+
